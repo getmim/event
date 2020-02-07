@@ -38,7 +38,7 @@ return [
                 'index' => 4000
             ],
             'cover' => [
-                'comment' => 'ex: {"url":"","label":""}',
+                'comment' => 'std-cover',
                 'type' => 'TEXT',
                 'attrs' => [],
                 'index' => 5000

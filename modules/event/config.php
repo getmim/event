@@ -61,8 +61,7 @@ return [
                     'type' => 'text'
                 ],
                 'cover' => [
-                    'type' => 'json',
-                    'format' => 'venue-cover'
+                    'type' => 'std-cover'
                 ],
                 'embed' => [
                     'type' => 'embed'
