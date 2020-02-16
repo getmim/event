@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'event',
-    '__version' => '0.0.1',
+    '__version' => '0.2.0',
     '__git' => 'git@github.com:getmim/event.git',
     '__license' => 'MIT',
     '__author' => [
@@ -99,6 +99,45 @@ return [
                 ],
                 'created' => [
                     'type' => 'date'
+                ]
+            ],
+            'content-pricing' => [
+                'object' => [
+                    'cases' => [
+                        'event' => [
+                            'model' => [
+                                'name' => 'Event\\Model\\Event',
+                                'field' => 'id'
+                            ],
+                            'format' => 'event'
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ],
+    'libEnum' => [
+        'enums' => [
+            'content-pricing.type' => [
+                'event' => 'Event'
+            ]
+        ]
+    ],
+    'contentPricing' => [
+        'active' => [
+            'event' => true
+        ],
+        'objects' => [
+            'event' => [
+                'model' => 'Event\\Model\\Event',
+                'format' => 'event',
+                'fields' => [
+                    'id'        => 'id',
+                    'user'      => 'user',
+                    'title'     => 'title',
+                    'created'   => 'created',
+                    'published' => 'created',
+                    'status'    => '$Published'
                 ]
             ]
         ]
